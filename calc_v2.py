@@ -18,11 +18,11 @@ def my_unit_test(l,r,c):
     try:
         result = perform_arithmetic_operations(l)
         if result == r:
-            print(f"La prueba se pasa  porque :{l} = {r}  con criterio {c}" )
+            print(f"La prueba pasa  porque :{l} = {r}  con criterio {c}" )
         else:
             print(f"La prueba falla porque :{l} != {r}  con criterio {c}" )
     except Exception as e:
-        print(f"cadena invalida: {e}")
+        print(f"La prueba falla porque :{l} != {r}  con criterio {c}")
 
 
 data_list = [["11-5", 6, "pass"], ["11-5", 7, "fail"],["11-5-1-1", 4, "pass"],["a-b", 0, "fail"]]
