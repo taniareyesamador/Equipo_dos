@@ -14,7 +14,7 @@ def perform_arithmetic_operations(s):
 
 
 def my_unit_test(l,r,c):
-    test_data = l
+    
     try:
         result = perform_arithmetic_operations(l)
         if result == r:
@@ -25,7 +25,7 @@ def my_unit_test(l,r,c):
         print(f"cadena invalida: {e}")
 
 
-data_list = [["11-5", 6, "pass"], ["11-5", 7, "fail"],["11-5-1-1", 4, "pass"]]
+data_list = [["11-5", 6, "pass"], ["11-5", 7, "fail"],["11-5-1-1", 4, "pass"],["a-b", 0, "fail"]]
 
 input_string = "50-3-6-7"
 result = perform_arithmetic_operations(input_string)
@@ -34,6 +34,6 @@ print(f"Result: {result*1.0}")
 
 
 for i in range(len(data_list)):
-    my_unit_test(data_list[1][0], data_list[i][1],data_list[i][2])
+    my_unit_test(data_list[i][0], data_list[i][1],data_list[i][2])
 #print(data_list[0][2])
      
