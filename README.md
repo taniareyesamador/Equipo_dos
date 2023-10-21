@@ -1,3 +1,4 @@
 # Sesion_5
-Sesión 5
-Tania Reyes
+Equipo 2
+Calculadora - operación resta
+
