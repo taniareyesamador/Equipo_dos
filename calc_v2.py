@@ -15,3 +15,17 @@ def perform_arithmetic_operations(s):
 input_string = "50-3-6-7"
 result = perform_arithmetic_operations(input_string)
 print(f"Result: {result*1.0}")
+
+def my_unit_test(l,r):
+    test_data = l
+    try:
+        result = perform_arithmetic_operations(l)
+        if result == r:
+            print(f"La prueba se pasa con exito porque :{l} = {r}" )
+        else:
+            print(f"La prueba falla porque :{l} != {r}" )
+    except Exception as e:
+        print(f"cadena invalida: {e}")
+
+my_unit_test('5 - 3-4', -3)
+     
