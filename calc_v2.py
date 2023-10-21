@@ -12,20 +12,28 @@ def perform_arithmetic_operations(s):
 
     return result
 
-input_string = "50-3-6-7"
-result = perform_arithmetic_operations(input_string)
-print(f"Result: {result*1.0}")
 
-def my_unit_test(l,r):
+def my_unit_test(l,r,c):
     test_data = l
     try:
         result = perform_arithmetic_operations(l)
         if result == r:
-            print(f"La prueba se pasa con exito porque :{l} = {r}" )
+            print(f"La prueba se pasa  porque :{l} = {r}  con criterio {c}" )
         else:
-            print(f"La prueba falla porque :{l} != {r}" )
+            print(f"La prueba falla porque :{l} != {r}  con criterio {c}" )
     except Exception as e:
         print(f"cadena invalida: {e}")
 
-my_unit_test('5 - 3-4', -3)
+
+data_list = [["11-5", 6, "pass"], ["11-5", 7, "fail"],["11-5-1-1", 4, "pass"]]
+
+input_string = "50-3-6-7"
+result = perform_arithmetic_operations(input_string)
+print(f"Result: {result*1.0}")
+
+
+
+for i in range(len(data_list)):
+    my_unit_test(data_list[1][0], data_list[i][1],data_list[i][2])
+#print(data_list[0][2])
      
